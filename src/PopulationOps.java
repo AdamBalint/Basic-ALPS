@@ -28,7 +28,6 @@ public class PopulationOps {
 	
 	public Solution[] getNewPopulation(Solution[] pop, int layerNumber){
 		Solution[] newPop = new Solution[pop.length];
-//		System.out.println(layerNumber);
 		for (int i = 0; i < pop.length; i+= 2){
 			Solution[] parents = {getParent(pop, layerNumber), getParent(pop, layerNumber)};
 			Solution[] children;
